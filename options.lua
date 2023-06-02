@@ -30,7 +30,8 @@ return function(local_vim)
         local_vim.g.mapleader = " "
         local_vim.opt.list = true
         local_vim.opt.listchars = vim.opt.listchars:append("space:⋅")
-        local_vim.g.cmp_enabled = true
+local_vim.opt.listchars = vim.opt.listchars:append("trail:⋅")        
+local_vim.g.cmp_enabled = true
         local_vim.g.autopairs_enabled = true
         local_vim.g.diagnostics_enabled = true
         local_vim.g.status_diagnostics_enabled = true
@@ -38,6 +39,6 @@ return function(local_vim)
         local_vim.g.ui_notifications_enabled = true
         local_vim.g.autoformat_enabled = false
         local_vim.g.indent_blankline_space_char_blankline = " "
-
+	
         return local_vim
 end
